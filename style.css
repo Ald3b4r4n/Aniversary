@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #222;
+  font-family: 'Press Start 2P', monospace;
+}
+
+#bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#bolo {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  opacity: 0;
+  z-index: 1;
+}
+
+#messages {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  text-align: center;
+  z-index: 2;
+}
+
+.pixel-font {
+  color: white;
+  text-shadow: 2px 2px #000;
+  margin: 20px;
+  font-size: 3vw; /* Aumentado as mensagens anteriores */
+}
+
+#casal-img {
+  position: absolute;
+  bottom: -40vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20vw;
+  min-width: 180px;
+  border: 6px solid #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 32px #f0a, 0 0 8px #fff;
+  opacity: 0;
+  z-index: 3;
+}
+
+#final-message {
+  color: #ffec70;
+  text-shadow: 2px 2px #000, 0 0 8px #f0a;
+  font-size: 4vw; /* Ainda maior */
+}
+
+#extra-message {
+  color: #ffec70;
+  text-shadow: 2px 2px #000, 0 0 8px #f0a;
+  font-size: 3.5vw;
+  position: absolute;
+  width: 100%;
+  top: calc(8vh + 5vw);
+  text-align: center;
+  opacity: 0;
+}
